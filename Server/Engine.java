@@ -30,4 +30,36 @@ public class Engine {
     String TICKER;
     
     Integer ORDER_ID = 0;
+
+    public Engine(Float initial_price, String ticker_symbol) {
+        this.PRICE = initial_price;
+        this.TICKER = ticker_symbol;
+    }    
+    
+    
+    public void Process(Order order){
+        
+    }
+    
+    public void State(){
+        
+    }
+    
+    //this functions inserts oorder and sorts elements
+    public void Insert(Queue<Order> queue, Order order, Integer key, Integer sign){
+        
+    }
+    
+    //this function can match orders from two given queues
+    public void Match(Queue<Order> buy_orders, Queue<Order> sell_orders){
+        
+    }
+    
+    public void Get(Queue<Order> orders, Integer order_id){
+        
+    }
+    
+    public void Get(Queue<Order> orders, Float price){
+        
+    }
 }
